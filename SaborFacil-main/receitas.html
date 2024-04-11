@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receitas</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Importando Font Awesome -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background: linear-gradient(to right, #ff7f50, #c932b5); /* Degradê de laranja para lilás */
+    color: #fff;
+    padding: 15px; /* Reduzindo o padding da barra de título */
+    text-align: center;
+    display: flex; /* Permitindo alinhamento horizontal */
+    align-items: center; /* Alinhando itens verticalmente */
+  }
+
+  .title {
+    flex: 1; /* Permitindo que o título ocupe o espaço restante */
+    font-size: 20px; /* Reduzindo o tamanho do título */
+    margin: 0; /* Removendo margem padrão */
+  }
+
+  .fav-option {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .recipe-card {
+    width: 120px;
+    height: 150px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer; /* Adicionando cursor pointer para indicar clique */
+    transition: transform 0.2s ease; /* Adicionando transição suave */
+  }
+
+  .recipe-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  }
+
+  .recipe-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .recipe-card .recipe-title {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .favorite-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #ff7f50; /* Cor da estrela */
+    font-size: 18px;
+  }
+
+  .favorite {
+    background-color: #ff7f50; /* Cor de fundo para indicar favorito */
+  }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<a a href="favoritos.html">
+  <div class="fav-option">Ver Favoritos</div> <!-- Movendo a opção "Ver Favoritos" para a esquerda -->
+</a>
+  <h1 class="title">Receitas</h1> <!-- Centralizando e reduzindo o tamanho do título "Receitas" -->
+</div>
+
+<div class="search-bar">
+  <input type="text" placeholder="Qual receita você gostaria?">
+</div>
+
+
+
+
+<div class="recipe-container">
+  <!-- Aqui você pode adicionar os quadrados de receitas -->
+
+  <div class="recipe-card" id="receita1">
+    <i class="far fa-star favorite-icon"></i> <!-- Ícone de estrela para adicionar aos favoritos -->
+    <a a href="pagina_da_receita.html">
+     <img src="img/bolo-de-banana-fofinho-730x548.jpeg" alt="Receita 1">
+     <div class="recipe-title">Bolo de banana fofinho</div>
+    </a>
+  </div>
+
+  <div class="recipe-card" id="receita2"> 
+    <i class="far fa-star favorite-icon"></i> 
+    <a a href="pagina_da_receita.html">
+     <img src="img/crepioca-de-queijo-com-tomate-e-oregano-2.webp" alt="Receita 2">
+     <div class="recipe-title">Crepioca de queijo com tomate e orégano</div>
+    </a> 
+  </div>
+
+  <div class="recipe-card" id="receita3">
+    <i class="far fa-star favorite-icon"></i>
+    <a a href="pagina_da_receita.html">
+     <img src="img/empadão_frango.jpg" alt="Receita 3">
+     <div class="recipe-title">Empadão de frango fácil</div>
+    </a>
+  </div>
+
+  <div class="recipe-card" id="receita4">
+   <i class="far fa-star favorite-icon"></i>
+   <a a href="pagina_da_receita.html">
+    <img src="img/bolinho_mandioca.png" alt="Receita 4">
+    <div class="recipe-title">Bolinho de mandioca com carne-seca</div>
+   </a>
+  </div>
+
+  <div class="recipe-card" id="receita5">
+   <i class="far fa-star favorite-icon"></i>
+   <a a href="pagina_da_receita.html">
+    <img src="img/lanche_forno.jpg" alt="Receita 5">
+    <div class="recipe-title">Lanche de forno com frango</div>
+   </a>
+  </div>
+
+  <div class="recipe-card" id="receita6">
+   <i class="far fa-star favorite-icon"></i>
+   <a a href="pagina_da_receita.html">
+    <img src="img/sanduiche-natural-de-atum-simples-730x548.webp" alt="Receita 6">
+    <div class="recipe-title">Sanduíche natural de atum simples</div>
+   </a>
+  </div>
+
+  <div class="recipe-card" id="receita7">
+   <i class="far fa-star favorite-icon"></i>
+   <a a href="pagina_da_receita.html">
+    <img src="img/pao-de-queijo-facil-e-delicioso-1-.webp" alt="Receita 7">
+    <div class="recipe-title">Pão de queijo</div>
+   </a>
+  </div>
+
+  <div class="recipe-card" id="receita8">
+  <i class="far fa-star favorite-icon"></i>
+  <a a href="pagina_da_receita.html">
+    <img src="img/strogonoff-de-frango-simples.jpg" alt="Receita 8">
+    <div class="recipe-title">Strogonoff de frango simples</div>
+  </a>
+  </div>
+
+
+  <!-- Adicione mais quadrados de receitas conforme necessário -->
+</div>
+
+<script>
+  // Captura os elementos das receitas
+  const receita1 = document.getElementById('receita1');
+  const receita2 = document.getElementById('receita2');
+  const receita3 = document.getElementById('receita3');
+  const receita4 = document.getElementById('receita4');
+  const receita5 = document.getElementById('receita5');
+  const receita6 = document.getElementById('receita6');
+  const receita7 = document.getElementById('receita7');
+  const receita8 = document.getElementById('receita8');
+
+  // Adiciona evento de clique para adicionar/remover a classe 'favorite' e alterar a cor da estrela
+  receita1.addEventListener('click', toggleFavorite);
+  receita2.addEventListener('click', toggleFavorite);
+  receita3.addEventListener('click', toggleFavorite);
+  receita4.addEventListener('click', toggleFavorite);
+  receita5.addEventListener('click', toggleFavorite);
+  receita6.addEventListener('click', toggleFavorite);
+  receita7.addEventListener('click', toggleFavorite);
+  receita8.addEventListener('click', toggleFavorite);
+  receita9.addEventListener('click', toggleFavorite);
+  receita10.addEventListener('click', toggleFavorite);
+
+  function toggleFavorite(event) {
+    const recipeCard = event.currentTarget;
+    recipeCard.classList.toggle('favorite');
+    const favoriteIcon = recipeCard.querySelector('.favorite-icon');
+    favoriteIcon.classList.toggle('fas'); // Adiciona classe 'fas' para preencher a estrela
+    favoriteIcon.classList.toggle('far'); // Remove classe 'far' para estrela vazia
+
+    // Salvar favoritos em localStorage
+    const favoriteRecipes = Array.from(document.querySelectorAll('.favorite')).map(recipe => ({
+      title: recipe.querySelector('.recipe-title').textContent,
+      image: recipe.querySelector('img').src,
+    }));
+    localStorage.setItem('favoriteRecipes', JSON.stringify(favoriteRecipes));
+  }
+</script>
+
+
+</body>
+</html>
